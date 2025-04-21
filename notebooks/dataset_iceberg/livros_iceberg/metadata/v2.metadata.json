@@ -1,0 +1,91 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "59b61883-0b50-4df7-b3db-8d00af89ff6b",
+  "location" : "dataset_iceberg/livros_iceberg",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1745262864338,
+  "last-column-id" : 4,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "titulo",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "autor",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "ano_publicacao",
+      "required" : false,
+      "type" : "int"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "arturoburigo",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 2885148248977963020,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 2885148248977963020,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 2885148248977963020,
+    "timestamp-ms" : 1745262864338,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1745262853169",
+      "added-data-files" : "3",
+      "added-records" : "3",
+      "added-files-size" : "3600",
+      "changed-partition-count" : "1",
+      "total-records" : "3",
+      "total-files-size" : "3600",
+      "total-data-files" : "3",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1745262853169",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.6.1 (commit 8e9d59d299be42b0bca9461457cd1e95dbaad086)"
+    },
+    "manifest-list" : "dataset_iceberg/livros_iceberg/metadata/snap-2885148248977963020-1-15ae12f6-3888-475d-b857-645f19d1ccee.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1745262864338,
+    "snapshot-id" : 2885148248977963020
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1745262862348,
+    "metadata-file" : "dataset_iceberg/livros_iceberg/metadata/v1.metadata.json"
+  } ]
+}

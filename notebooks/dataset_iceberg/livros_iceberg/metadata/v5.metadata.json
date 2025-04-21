@@ -1,0 +1,184 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "59b61883-0b50-4df7-b3db-8d00af89ff6b",
+  "location" : "dataset_iceberg/livros_iceberg",
+  "last-sequence-number" : 4,
+  "last-updated-ms" : 1745262888498,
+  "last-column-id" : 4,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "titulo",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "autor",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "ano_publicacao",
+      "required" : false,
+      "type" : "int"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "arturoburigo",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 857436532204448480,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 857436532204448480,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 2885148248977963020,
+    "timestamp-ms" : 1745262864338,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1745262853169",
+      "added-data-files" : "3",
+      "added-records" : "3",
+      "added-files-size" : "3600",
+      "changed-partition-count" : "1",
+      "total-records" : "3",
+      "total-files-size" : "3600",
+      "total-data-files" : "3",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1745262853169",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.6.1 (commit 8e9d59d299be42b0bca9461457cd1e95dbaad086)"
+    },
+    "manifest-list" : "dataset_iceberg/livros_iceberg/metadata/snap-2885148248977963020-1-15ae12f6-3888-475d-b857-645f19d1ccee.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 2,
+    "snapshot-id" : 5414680467181866292,
+    "parent-snapshot-id" : 2885148248977963020,
+    "timestamp-ms" : 1745262871520,
+    "summary" : {
+      "operation" : "overwrite",
+      "spark.app.id" : "local-1745262853169",
+      "added-data-files" : "1",
+      "deleted-data-files" : "1",
+      "added-records" : "1",
+      "deleted-records" : "1",
+      "added-files-size" : "1238",
+      "removed-files-size" : "1240",
+      "changed-partition-count" : "1",
+      "total-records" : "3",
+      "total-files-size" : "3598",
+      "total-data-files" : "3",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1745262853169",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.6.1 (commit 8e9d59d299be42b0bca9461457cd1e95dbaad086)"
+    },
+    "manifest-list" : "dataset_iceberg/livros_iceberg/metadata/snap-5414680467181866292-1-c5bcae40-9404-4956-a07d-d751034311d9.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 3,
+    "snapshot-id" : 8362383957212395307,
+    "parent-snapshot-id" : 5414680467181866292,
+    "timestamp-ms" : 1745262873815,
+    "summary" : {
+      "operation" : "delete",
+      "spark.app.id" : "local-1745262853169",
+      "deleted-data-files" : "1",
+      "deleted-records" : "1",
+      "removed-files-size" : "1196",
+      "changed-partition-count" : "1",
+      "total-records" : "2",
+      "total-files-size" : "2402",
+      "total-data-files" : "2",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1745262853169",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.6.1 (commit 8e9d59d299be42b0bca9461457cd1e95dbaad086)"
+    },
+    "manifest-list" : "dataset_iceberg/livros_iceberg/metadata/snap-8362383957212395307-1-f7a0795c-c34b-491b-8269-9c19f3985fb5.avro",
+    "schema-id" : 0
+  }, {
+    "sequence-number" : 4,
+    "snapshot-id" : 857436532204448480,
+    "parent-snapshot-id" : 8362383957212395307,
+    "timestamp-ms" : 1745262888498,
+    "summary" : {
+      "operation" : "delete",
+      "spark.app.id" : "local-1745262853169",
+      "changed-partition-count" : "0",
+      "total-records" : "2",
+      "total-files-size" : "2402",
+      "total-data-files" : "2",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0",
+      "engine-version" : "3.5.5",
+      "app-id" : "local-1745262853169",
+      "engine-name" : "spark",
+      "iceberg-version" : "Apache Iceberg 1.6.1 (commit 8e9d59d299be42b0bca9461457cd1e95dbaad086)"
+    },
+    "manifest-list" : "dataset_iceberg/livros_iceberg/metadata/snap-857436532204448480-1-6b7c9ef8-8cec-4b5e-92ba-90aead1e9cf2.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1745262864338,
+    "snapshot-id" : 2885148248977963020
+  }, {
+    "timestamp-ms" : 1745262871520,
+    "snapshot-id" : 5414680467181866292
+  }, {
+    "timestamp-ms" : 1745262873815,
+    "snapshot-id" : 8362383957212395307
+  }, {
+    "timestamp-ms" : 1745262888498,
+    "snapshot-id" : 857436532204448480
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1745262862348,
+    "metadata-file" : "dataset_iceberg/livros_iceberg/metadata/v1.metadata.json"
+  }, {
+    "timestamp-ms" : 1745262864338,
+    "metadata-file" : "dataset_iceberg/livros_iceberg/metadata/v2.metadata.json"
+  }, {
+    "timestamp-ms" : 1745262871520,
+    "metadata-file" : "dataset_iceberg/livros_iceberg/metadata/v3.metadata.json"
+  }, {
+    "timestamp-ms" : 1745262873815,
+    "metadata-file" : "dataset_iceberg/livros_iceberg/metadata/v4.metadata.json"
+  } ]
+}

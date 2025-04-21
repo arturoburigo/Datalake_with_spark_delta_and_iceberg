@@ -1,0 +1,56 @@
+site_name: Data Lake with Spark and Iceberg
+site_description: Documentation for Data Lake implementation using Apache Spark with Delta Lake and Apache Iceberg
+site_author: Arturo Burigo
+repo_url: https://github.com/arturorburigo/datalake-with-spark-and-iceberg
+docs_dir: documentation
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Delta Lake:
+    - Overview: delta/index.md
+    - Operations: delta/operations.md
+  - Apache Iceberg:
+    - Overview: iceberg/index.md
+    - Operations: iceberg/operations.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python 
