@@ -7,6 +7,8 @@ Este projeto demonstra a implementação de um Data Lake usando Apache Spark com
 - Python 3.12 ou superior
 - Poetry (gerenciador de pacotes Python)
 - Java 11 ou superior (necessário para Apache Spark)
+- Hadoop 3.0.0 (Necessário para o Apache Iceberg)
+- JDK 8 (necessário para Hadoop)
 - Git
 
 ## Instalação
@@ -40,7 +42,7 @@ Verifique a instalação:
 poetry --version
 ```
 
-### 3. Configuração do Java
+### 3. Configuração do Java e Hadoop
 
 Certifique-se de ter o Java 11+ instalado:
 ```bash
@@ -52,6 +54,7 @@ Configure a variável JAVA_HOME:
   ```bash
   export JAVA_HOME=$(/usr/libexec/java_home -v 11)
   export PATH=$JAVA_HOME/bin:$PATH
+  export HADOOP_HOME=$(/usr/libexec/hadoop)
   ```
 - **Windows**: Configure através das Variáveis de Ambiente do Sistema
 
