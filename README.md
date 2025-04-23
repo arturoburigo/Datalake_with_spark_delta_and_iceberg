@@ -190,6 +190,11 @@ mkdocstrings = ">=0.24.0,<1.0.0"
 4. Push para a branch (`git push origin feature/nova-feature`)
 5. Abra um Pull Request
 
+## Referências Bibliográficas
+
+- https://datawaybr.medium.com/como-sair-do-zero-no-delta-lake-em-apenas-uma-aula-d152688a4cc8
+- https://medium.com/@r.yamnych/apache-iceberg-to-pyspark-by-example-c9d52843694a
+
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes. 
